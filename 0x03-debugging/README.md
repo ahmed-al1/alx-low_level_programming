@@ -1,2 +1,1 @@
-Fuck alx fuck cheaker
-REDMEfile
+readme
