@@ -1,19 +1,20 @@
 #include "main.h"
 
-/*
- * swap_int - is a fintions swaps the numbers
+/**
+ * swap_int - swaps the values of two integers
+ *		using two input parameters
  *
- * @a: the first parameter
- * @b: the socend parameter
+ * @a: input parameter 1
+ * @b: input parameter 2
  *
- **/
+ * Return: Nothing
+*/
 
-void swap_int(int *a, int *b);
-
+void swap_int(int *a, int *b)
 {
-	int l;
-	*a = l;
-	*a = *b;
-	l = *b;
+	int temp;
 
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
