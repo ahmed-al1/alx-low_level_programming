@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * reset _to_98 - it define an pinter and set it to a specifie
+ * reset_to_98 - takes a pointer to an int parameter
+ *               and updates the value it points to 98
  *
- * @n: a pointer variable
+ * @n: int parameter
  *
- * Return : nothing
- **/
+ * Return: Nothing
+ */
 
-void reset_to_98(int *n);
-
+void reset_to_98(int *n)
 {
 	*n = 98;
 }
