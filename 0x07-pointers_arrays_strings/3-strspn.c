@@ -7,6 +7,7 @@
  * @accept: the bytes in the function.
  * Return: we will return an unsigned int.
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int as, ma;
