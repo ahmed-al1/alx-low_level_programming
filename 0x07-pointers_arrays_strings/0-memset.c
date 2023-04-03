@@ -8,14 +8,14 @@
  * Return: pointer of kind s
  */
 
-	char *_memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int as;
 
-	for (as = 0; n > 0; as++; n--)
+	for (as = 0; n > 0; as++, n--)
 	{
-
-	s[as] = b;
+		s[as] = b;
 	}
+
 	return (s);
 }
