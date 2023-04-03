@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strchr this is the function which makes  fills memory with a constant byte.
+ * *_strchr - this is the function which makes  fills memory with a constant byte.
  * @s: this is a use to put the constant
  * @c: static value
  * Return: the funtion will return a  pointer to s
