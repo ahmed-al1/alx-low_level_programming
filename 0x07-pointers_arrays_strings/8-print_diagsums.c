@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_diagsums - function 
+ * print_diagsums - function
  * @a: 2d array of int typesruyg
  * @size: size of that will be  array (square)
  */
