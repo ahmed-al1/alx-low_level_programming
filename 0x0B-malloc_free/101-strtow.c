@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * wrdcnt - counts the number of words in a string
- * @s: string to count
+ * wrdcnt - counts the numbgfdger of words in a string
+ * @s: string to countgfdgd
  *
- * Return: int of number of words
+ * Return: int of number offdgfdg words
  */
 int wrdcnt(char *s)
 {
-	int bna, n = 0;
+	int nba, n = 0;
 
-	for (i = 0; bna[i]; i++)
+	for (nba = 0; s[nba]; nba++)
 	{
-		if (bna[i] == ' ')
+		if (s[nba] == ' ')
 		{
-			if (bna[i + 1] != ' ' && bna[i + 1] != '\0')
+			if (s[nba + 1] != ' ' && s[nba + 1] != '\0')
 				n++;
 		}
-		else if (i == 0)
+		else if (nba == 0)
 			n++;
 	}
 	n++;
@@ -25,14 +25,14 @@ int wrdcnt(char *s)
 }
 
 /**
- * strtow - splits a string into words
- * @str: string to split
+ * strtow - splitfdgdgs a string into words
+ * @str: strigfdng to split
  *
- * Return: pointer to an array of strings
+ * Return: pointer to fdgfdan array of strings
  */
 char **strtow(char *str)
 {
-	int i, j, k, l, n = 0, wc = 0;
+	int nba, sam, k, l, n = 0, wc = 0;
 	char **lk;
 
 	if (str == NULL || *str == '\0')
@@ -44,32 +44,32 @@ char **strtow(char *str)
 	if (lk == NULL)
 		return (NULL);
 	lk[n - 1] = NULL;
-	i = 0;
-	while (str[i])
+	nba = 0;
+	while (str[nba])
 	{
-		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
+		if (str[nba] != ' ' && (nba == 0 || str[nba - 1] == ' '))
 		{
-			for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
+			for (sam = 1; str[nba + sam] != ' ' && str[nba + sam]; sam++)
 				;
-			j++;
-			lk[wc] = (char *)malloc(j * sizeof(char));
-			j--;
+			sam++;
+			lk[wc] = (char *)malloc(sam * sizeof(char));
+			sam--;
 			if (lk[wc] == NULL)
 			{
 				for (k = 0; k < wc; k++)
-					free(w[lk]);
+					free(lk[k]);
 				free(lk[n - 1]);
 				free(lk);
 				return (NULL);
 			}
-			for (l = 0; l < j; l++)
-				lk[wc][l] = str[i + l];
+			for (l = 0; l < sam; l++)
+				lk[wc][l] = str[nba + l];
 			lk[wc][l] = '\0';
 			wc++;
-			i += j;
+			nba += sam;
 		}
 		else
-			i++;
+			nba++;
 	}
 	return (lk);
 }
