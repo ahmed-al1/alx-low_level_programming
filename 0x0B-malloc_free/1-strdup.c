@@ -12,14 +12,14 @@ char *_strdup(char *str)
 	int b = 0, s = 0;
 	char *n;
 
-	if (st == NULL)
+	if (str == NULL)
 		return (NULL);
 
-	for (; st[s] != '\0'; s++)
+	for (; str[s] != '\0'; s++)
 	;
 
-	/*+1 on the size puthjkdss the end of string character*/
-	n = malloc(s * sizeof(*st) + 1);
+	/*+1 on the size puthfjds the end of string character*/
+	n = malloc(s * sizeof(*str) + 1);
 
 	if (n == 0)
 	{
@@ -29,7 +29,7 @@ char *_strdup(char *str)
 	{
 
 		for (; b < s; b++)
-			m[b] = st[b];
+			n[b] = str[b];
 	}
 	return (n);
 }
