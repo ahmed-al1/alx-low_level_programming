@@ -1,33 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *main-prints the mivfdfdvnimum number of coins
- *to make change for an amvfdvdfvdfvount of money.
- *@argc:numvfdvber of commandline arfvguments.
- *@argv:pointervfdvd to an array of commmand line arguments.
- *Return:0.
+ *main-prints tfesjuifdhe minimum number of coins
+ *to make change for andslfk;s amount of m.
+ *@argc:number of commandline sdklfjhklarguments.
+ *@argv:pointer to an array of commmandfmkjds line arguments.
+ *Return:0-success, non-zero-fdsufoifail.
  */
 
 int main(int argc, char *argv[])
 {
 	if (argc == 2)
 	{
-	int n, l = 0, m = atoi(argv[1]);
-	int cents[] = {25, 10, 5, 2, 1};
+	int sam, cda = 0, m = atoi(argv[1]);
+	int c[] = {25, 10, 5, 2, 1};
 
-	for (n = 0; n < 5; n++)
+	for (sam = 0; sam < 5; sam++)
 	{
-		if (m >= cents[i])
+		if (m >= c[sam])
 		{
-			l += m / cents[n];
-			money = money % cents[n];
-			if (m % cents[n] == 0)
+			cda += m / c[sam];
+			m = m % c[sam];
+			if (m % c[sam] == 0)
 			{
 				break;
 			}
 		}
 	}
-	printf("%d\n", l);
+	printf("%d\n", cda);
 	}
 	else
 	{
