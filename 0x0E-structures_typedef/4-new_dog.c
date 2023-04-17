@@ -6,7 +6,7 @@
  *
  * @str: the string gfdto get the ln
  *
- * Return: ln ofgfdg @str
+ * Return: ln @str
 */
 
 int _strlen(const char *str)
@@ -19,12 +19,12 @@ int _strlen(const char *str)
 }
 
 /**
- * _strcopy - a function that returgfdgns @dest with a copy of a string from @src
+ * _strcopy - a function that rfdgns @dest with a copy of a string from @src
  *
  * @src: string to copygfdgfd
  * @dest: copy string to heregfdg
  *
- * Return: @destgfd
+ * Return: @dest
 */
 
 char *_strcopy(char *dest, char *src)
